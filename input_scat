@@ -1,0 +1,54 @@
+32.0,  16.0d0, 90.0d0, 40.0d0       !  1. Ap, Zp, At, Zt
+1.2d0, 1.2d0                        !  2. r0p, r0t
+0, 0                                !  3. coup_p, coup_t
+1, 2                                !  4. Nphonon_t, lambda_t
+2.18d0, 0.089d0, 0.089d0            !  5. omega_t, betaL_t, betaL_tC
+0, 3                                !  6. Nphonon_t2, lambda_t2
+2.75d0, 0.211d0, 0.211d0            !  7. omega_t2, betaL_t2, betaL_t2C
+0                                   !  8. nrot_t
+0.08199d0, 0.306d0, 0.05d0          !  9. E2t, beta2t, beta4t
+1, 2                                ! 10. Nphonon_p, lambda_p
+2.23d0, 0.32d0, 0.32d0              ! 11. omega_p, betaL_p, betaL_pC
+0, 3                                ! 12. Nphonon_p2, lambda_p2
+5.006d0, 0.40d0, 0.40d0             ! 13. omega_p2, betaL_p2, betaL_2pC
+1                                   ! 14. nrot_p
+1.779d0, -0.407d0, 0.00d0           ! 15. E2p, beta2p, beta4p
+69.345d0, 1.177d0, 0.665d0          ! 16. V0, r0, a
+30.0d0, 0.9d0, 0.30d0               ! 17. W0, r0w, aw
+1.1d0                               ! 18. r0c
+60.0d0, 95.0d0, 0.4d0               ! 19. Emin, Emax, dE
+130.0d0, 180.0d0,10.0d0             ! 20. thmin, thmax, dth
+0.00d0, 100.00d0, 0.04d0, 25.0d0    ! 21. rmin, rmax, dr, rcut
+100                                 ! 22. Jmax
+8                                   ! 23. num_stab_pt
+2.0d0                               ! 24. del_E
+'test2'                             ! 25. dir
+
+----------------------------------
+Ap, Zp, At, Zt
+r0p, r0t
+coup_p, coup_t
+
+Nphonon_t, lambda_t
+omega_t, betaL_t
+
+nrot_t
+E2t, beta2t, beta4t
+
+Nphonon_p, lambda_p
+omega_p, betaL_p
+
+nrot_p
+E2p, beta2p, beta4p
+
+V0, r0, a
+W0, rw, aw
+r0c
+
+Emin, Emax, dE
+thmin, thmax, dth
+rmin, rmax, dr
+Jmax
+vref_type   : 1...e_n, 2...Vcp(n,n), 3...e_n + Vcp(n,n)
+
+dir
