@@ -36,9 +36,9 @@
 
     ios = getcwd(cwd)
     call check_directory(trim(cwd)//'/'//dir)
-    call check_directory(trim(dir)//'/'//dir2)
-    call check_directory(trim(dir)//'/'//dir3)
-    call check_directory(trim(dir)//'/'//dir4)
+    call check_directory(trim(cwd)//'/'//trim(dir)//'/'//dir2)
+    call check_directory(trim(cwd)//'/'//trim(dir)//'/'//dir3)
+    call check_directory(trim(cwd)//'/'//trim(dir)//'/'//dir4)
 
     call vrp%rel_pot_(ip)
     call cm%coup_mat_(ip)
@@ -238,10 +238,11 @@
       integer :: i, n, m
       integer :: s, di_u, di_l
       integer :: t(ip%Nch)
+      integer, dimension(ip%Nch) :: k
+      integer, dimension(ip%nth,ip%Egrid+1) :: kcm2
       real(8), allocatable, dimension(:,:,:) :: dsig_qel_n_lab
       real(8), allocatable, dimension(:,:) :: dsig_R_lab
-      real(8), dimension(ip%Nch) :: Kcm, vcm, k, tcm, tlab
-      real(8), dimension(ip%nth,ip%Egrid+1) :: kcm2
+      real(8), dimension(ip%Nch) :: Kcm, vcm, tcm, tlab
       real(8) :: E, Dqel, Elab, V, E2
       character(len=50), parameter :: FM8='(1x,2f10.3,2es14.4)'
       character(len=50), parameter :: FM9='(1x,2f10.3,2es11.3)'

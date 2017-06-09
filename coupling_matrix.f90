@@ -57,7 +57,7 @@ module coupling_matrix
     if (allocated(this%Vcp_linear)) deallocate(this%Vcp_linear)
   end subroutine
 !----------------------------------------------------------------------
-  function get_Vcp(this, ir) result(V)
+  pure function get_Vcp(this, ir) result(V)
     implicit none
     class(coup_mat), intent(in) :: this
     integer, intent(in) :: ir

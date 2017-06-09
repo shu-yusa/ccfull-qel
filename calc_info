@@ -1,0 +1,72 @@
+ ------------------------------------------------
+  Target     nucleus :  90 Zr
+  Projectile nucleus :  32 S 
+
+  Phonon excitation in the target :
+   r0      = 1.2000 fm
+   Rt      = 5.3777 fm
+   betaN   = 0.0890
+   betaC   = 0.0890
+   omega   = 2.1800 MeV
+   Lambda  = 2
+   Nphonon = 1
+
+
+  Phonon excitation in the projectile :
+   r0      = 1.2000 fm
+   Rp      = 3.8098 fm
+   betaL   = 0.3200
+   betaC   = 0.3200
+   omega   = 2.2300 MeV
+   Lambda  = 2
+   Nphonon = 1
+
+
+
+  The number of channels =     4
+ ----------------------------------------------
+  ** Potential Profile (Woods-Saxon) **
+   V0 =  69.3450 MeV
+   r0 =   1.1770 fm
+   Rn =   9.0114 fm
+   a  =   0.6650 fm
+  ** Coulomb radius **
+   r0c=   1.1000 fm
+   Rc =   8.4218 fm
+
+   W0 =  30.0000 MeV
+   r0w=   0.9000 fm
+   Rw =   6.8906 fm
+   aw =   0.3000 fm
+
+  Minimum of the Coulomb pocket
+   r    =   7.9485 fm
+   V(r) =  57.7564 MeV
+
+  Maximum of the Coulomb barrier
+   r    =  10.5792 fm
+   V(r) =  81.1405 MeV
+ ------------------------------------------------
+
+  ** The numer of stabilization points **
+     8 points
+
+ ------------------------------------------------
+  ** other information **                      
+  rmin =   0.0000 fm
+  rmax = 100.0000 fm
+  dr   =   0.0400 fm
+  rcut =  25.0000 fm
+
+  Emin =  60.0000 MeV
+  Emax =  95.0000 MeV
+  dE   =   0.4000 MeV
+
+
+  Jmax =  100
+ ----------------------------------------------
+  Channels :
+   1 ch: nt =  0, np =  0, E* =  0.000 MeV
+   2 ch: nt =  1, np =  0, E* =  2.180 MeV
+   3 ch: nt =  0, np =  1, E* =  2.230 MeV
+   4 ch: nt =  1, np =  1, E* =  4.410 MeV
