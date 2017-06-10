@@ -22,7 +22,7 @@
 100                                 ! 22. Jmax
 8                                   ! 23. num_stab_pt
 2.0d0                               ! 24. del_E
-'test2'                             ! 25. dir
+'results'                             ! 25. dir
 
 ----------------------------------
 Ap, Zp, At, Zt
