@@ -1,5 +1,7 @@
 *~
 *.o
 *.mod
+*.swp
+*.swo
 a.out
-results
+results/*

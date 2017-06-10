@@ -22,33 +22,4 @@
 100                                 ! 22. Jmax
 8                                   ! 23. num_stab_pt
 2.0d0                               ! 24. del_E
-'results'                             ! 25. dir
-
-----------------------------------
-Ap, Zp, At, Zt
-r0p, r0t
-coup_p, coup_t
-
-Nphonon_t, lambda_t
-omega_t, betaL_t
-
-nrot_t
-E2t, beta2t, beta4t
-
-Nphonon_p, lambda_p
-omega_p, betaL_p
-
-nrot_p
-E2p, beta2p, beta4p
-
-V0, r0, a
-W0, rw, aw
-r0c
-
-Emin, Emax, dE
-thmin, thmax, dth
-rmin, rmax, dr
-Jmax
-vref_type   : 1...e_n, 2...Vcp(n,n), 3...e_n + Vcp(n,n)
-
-dir
+'90Zr_32S'                          ! 25. dir

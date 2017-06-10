@@ -20,6 +20,7 @@
     character(len=500) :: dir2='angular'
     character(len=500) :: dir3='angular_dist'
     character(len=500) :: dir4="Q_val_dist"
+    character(len=20) :: outdir = 'results'
     character(len=100), parameter :: INPF="input_scat"
     type(inp) :: ip
     type(cc_scat) :: cc_calc
@@ -30,10 +31,11 @@
     call ip%read_input(trim(INPF), dir)
 
     ios = getcwd(cwd)
-    call check_directory(trim(cwd)//'/'//dir)
-    call check_directory(trim(cwd)//'/'//trim(dir)//'/'//dir2)
-    call check_directory(trim(cwd)//'/'//trim(dir)//'/'//dir3)
-    call check_directory(trim(cwd)//'/'//trim(dir)//'/'//dir4)
+    call check_directory(trim(cwd)//'/'//trim(outdir))
+    call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//dir)
+    call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir)//'/'//dir2)
+    call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir)//'/'//dir3)
+    call check_directory(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir)//'/'//dir4)
 
     call vrp%rel_pot_(ip)
     call cm%coup_mat_(ip)
@@ -60,7 +62,7 @@
 
     b = cm%find_rmin(0)
     call vrp%make_Vrel()
-    ios = chdir(trim(cwd)//'/'//trim(dir))
+    ios = chdir(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir))
     call prof%pot_prof()
     call prof%Reaction_prof("calc_info")
     ios = chdir(trim(cwd))
@@ -86,7 +88,7 @@
     dsig_iel = sum(dsig_qel_n(2:ip%Nch,:,:),dim=1) 
     dsig_qel = dsig_iel + dsig_qel_n(1,:,:)
 
-    ios = chdir(trim(cwd)//'/'//trim(dir))
+    ios = chdir(trim(cwd)//'/'//trim(outdir)//'/'//trim(dir))
     call output()
     call qel_corrected_angle()
 
@@ -96,7 +98,7 @@
     call vrp%destruct_rel_pot()
     call cm%destruct_coup_mat()
     write(output_unit,*) "calculation finished."
-    write(output_unit,*) 'directory : '//trim(dir)
+    write(output_unit,*) 'directory : '//trim(outdir)//'/'//trim(dir)
 
     deallocate(Ea,  Esig, angl)
     deallocate(sig_fus, sig_iel, sig_iel_n, spin)
