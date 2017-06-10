@@ -41,5 +41,5 @@ Outputs are consisted of the following files.
 * Q_val_dist ... Q-value distribution of the scattering.
 
 ## References
-[K. Hagino, N. Rowley, and A.T. Kruppa, Comput. Phys. Comm 123 (1999) 143 - 152](http://www.nucl.phys.tohoku.ac.jp/~hagino/ccfull.pdf)
+[K. Hagino, N. Rowley, and A.T. Kruppa, Comput. Phys. Comm 123 (1999) 143 - 152](http://www.nucl.phys.tohoku.ac.jp/~hagino/ccfull.pdf)  
 [Role of Noncollective Excitations in Low-Energy Heavy-Ion Fusion Reaction and Quasi-Elastic Scattering](http://tohoku59.rssing.com/browser.php?indx=10615915&item=42)

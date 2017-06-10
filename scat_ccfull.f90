@@ -1,8 +1,3 @@
-!======================================================================!
-!     Title    : scat_ccfull.f90                                       !
-!     Coded by : Shusaku Yusa                                          !
-!     Last modified : 2013.2.18(Mon)                                   ! 
-!======================================================================!
   program main
     use, intrinsic :: iso_fortran_env
     use global_constant, only : PI, mass
