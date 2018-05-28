@@ -42,4 +42,4 @@ Outputs are consisted of the following files.
 
 ## References
 [K. Hagino, N. Rowley, and A.T. Kruppa, Comput. Phys. Comm 123 (1999) 143 - 152](http://www.nucl.phys.tohoku.ac.jp/~hagino/ccfull.pdf)  
-["Role of Noncollective Excitations in Low-Energy Heavy-Ion Fusion Reaction and Quasi-Elastic Scattering", S. Yusa, Ph. D. Thesis, Tohoku University, 2013](http://tohoku59.rssing.com/browser.php?indx=10615915&item=42)
+[Tohoku University Repository（TOUR）](https://tohoku.repo.nii.ac.jp/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=70405&item_no=1&page_id=33&block_id=38)
