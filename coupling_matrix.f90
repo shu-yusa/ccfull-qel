@@ -215,7 +215,6 @@ module coupling_matrix
 !     Vpot(n,n) = -this%ip%V0 / (1.0d0 + exp((r - this%ip%Rn)/this%ip%a))
 !   end forall
 
-
     Vn = - this%ip%V0 / (1.0d0 + exp((r - this%ip%Rn - Oa) / this%ip%a))
 
     Vpot = 0.0d0
@@ -226,7 +225,6 @@ module coupling_matrix
         end do
       end do
     end do
-
 
     return
   end subroutine
@@ -323,7 +321,7 @@ module coupling_matrix
     return
   end subroutine
 !----------------------------------------------------------------------
-  subroutine  Vn_vib(this, ir, r, Vpot)
+  subroutine Vn_vib(this, ir, r, Vpot)
 !   use mkl95_lapack
     use eigen
     implicit none

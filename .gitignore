@@ -1,7 +1,8 @@
 *~
-*.o
+*.sw[po]
+.DS_Store
 *.mod
-*.swp
-*.swo
+*.o
 a.out
 results/*
+utils/lib/*.a
