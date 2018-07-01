@@ -1,4 +1,4 @@
-FC=`which gfortran`
+FC=gfortran
 SUBDIR=./utils
 OBJDIR=./obj
 MODDIR=./modules
