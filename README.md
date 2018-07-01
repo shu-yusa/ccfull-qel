@@ -3,6 +3,13 @@ Code for calculating quasi-elastic scattering using the coupled-channels method.
 
 ## Prerequisites
 `make` and `gfortran` need to be installed.
+For mac, you can install `gfortran` by Homebrew
+```bash
+brew install gcc
+brew install gfortran
+```
+or you can install from official binary [GFortranBinaries - GCC Wiki](https://gcc.gnu.org/wiki/GFortranBinaries).
+
 
 ## Compile & Run
 Compile the source codes by the following.

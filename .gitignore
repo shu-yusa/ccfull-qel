@@ -4,5 +4,6 @@
 *.mod
 *.o
 a.out
-results/*
-utils/lib/*.a
+/results/*
+!/results/.gitkeep
+/utils/lib/*.a
